@@ -9,32 +9,33 @@
 </head>
 <body>
     <div class="content">
-    <div class="display">
-        <input type="text" id="display" readonly>
+        <button id="mode">Light Mode</button>
+        <div class="display">
+            <input type="text" id="display">
+        </div>
+        <div class="buttons">
+            <button onclick="clearResult()" class="ceBtn green">C</button>
+            <button onclick="operate('-+')" class="optBtn green">+/-</button>
+            <button onclick="operate('%')" class="optBtn green">%</button>
+            <button onclick="operate('/')" class="optBtn red">÷</button>
+            <button onclick="append('7')">7</button>
+            <button onclick="append('8')">8</button>
+            <button onclick="append('9')">9</button>
+            <button onclick="operate('*')" class="optBtn red">x</button>
+            <button onclick="append('4')">4</button>
+            <button onclick="append('5')">5</button>
+            <button onclick="append('6')">6</button>
+            <button onclick="operate('-')" class="optBtn red">-</button>
+            <button onclick="append('1')">1</button>
+            <button onclick="append('2')">2</button>
+            <button onclick="append('3')">3</button>
+            <button onclick="operate('+')" class="optBtn red">+</button>
+            <button onclick="backspace()">←</button>
+            <button onclick="append('0')">0</button>
+            <button onclick="append('.')">.</button>
+            <button onclick="calculate()" class="red">=</button>
+        </div>
     </div>
-    <div class="buttons">
-        <button onclick="clearResult()" class="ceBtn green">C</button>
-        <button onclick="operate('-+')" class="optBtn green">+/-</button>
-        <button onclick="operate('%')" class="optBtn green">%</button>
-        <button onclick="operate('/')" class="optBtn red">÷</button>
-        <button onclick="append('7')">7</button>
-        <button onclick="append('8')">8</button>
-        <button onclick="append('9')">9</button>
-        <button onclick="operate('*')" class="optBtn red">x</button>
-        <button onclick="append('4')">4</button>
-        <button onclick="append('5')">5</button>
-        <button onclick="append('6')">6</button>
-        <button onclick="operate('-')" class="optBtn red">-</button>
-        <button onclick="append('1')">1</button>
-        <button onclick="append('2')">2</button>
-        <button onclick="append('3')">3</button>
-        <button onclick="operate('+')" class="optBtn red">+</button>
-        <button onclick="backspace()">←</button>
-	    <button onclick="append('0')">0</button>
-	    <button onclick="append('.')">.</button>
-	    <button onclick="calculate()" class="red">=</button>
-    </div>
-</div>
     <script src="index.js"></script>
 </body>
 </html>
