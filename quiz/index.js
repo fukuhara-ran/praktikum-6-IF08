@@ -26,11 +26,15 @@ function calculate() {
 lbutton.addEventListener('click', function () {
     if(html.dataset.colorMode === 'dark'){
         html.dataset.colorMode = 'light';
+        lbutton.style.opacity = '1';
+        dbutton.style.opacity = '0.3';
     }
 })
 dbutton.addEventListener('click', function () {
     if(html.dataset.colorMode === 'light'){
         html.dataset.colorMode = 'dark';
+        dbutton.style.opacity = '1';
+        lbutton.style.opacity = '0.3';
     }
 })
 

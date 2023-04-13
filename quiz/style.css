@@ -16,6 +16,7 @@ html {
   --display-bg: #22252d;
   --button-bg: #272b33;
   --text: #fff;
+  --button-hover: #484e58;
 }
 
 html[data-color-mode="light"] {
@@ -26,6 +27,7 @@ html[data-color-mode="light"] {
   --display-bg: #fff;
   --button-bg: #fff;
   --text: #333;
+  --button-hover: #555555;
 }
 
 .content {
@@ -71,12 +73,14 @@ input#display {
   padding: 10px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+  border: 1px solid var(--border-button-mode);
 }
 
 .display {
   background-color: var(--display-bg);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  border: 1px solid var(--border-button-mode);
 }
 
 .buttons button {
@@ -89,7 +93,7 @@ input#display {
 }
 
 .buttons button:hover {
-  background-color: #484e58;
+  background-color: var(--button-hover);
 }
 
 button.green {
