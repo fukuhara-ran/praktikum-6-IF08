@@ -2,6 +2,17 @@ let display = document.getElementById('display');
 const lbutton = document.getElementById('lMode');
 const dbutton = document.getElementById('dMode');
 const html = document.querySelector('html');
+const toggleSignButton = document.querySelector('.pm');
+
+toggleSignButton.addEventListener('click', () => {
+    if (display.value !== '0') {
+      if (display.value.charAt(0) === '-') {
+        display.value = display.value.slice(1);
+      } else {
+        display.value = '-' + display.value;
+      }
+    }
+})
 
 function append(value) {
     display.value += value;
