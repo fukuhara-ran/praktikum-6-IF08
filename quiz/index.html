@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="content">
     <div class="display">
         <input type="text" id="display">
     </div>
     <div class="buttons">
+        <button onclick="clearDisplay('CE')" class="ceBtn">AC</button>
+        <button onclick="addToDisplay('%')" class="optBtn">+/-</button>
         <button onclick="addToDisplay('%')" class="optBtn">%</button>
-        <button onclick="clearDisplay('CE')" class="ceBtn">CE</button>
         <button onclick="addToDisplay('/')" class="optBtn">÷</button>
         <button onclick="addToDisplay('7')">7</button>
         <button onclick="addToDisplay('8')">8</button>
@@ -31,6 +33,7 @@
         <button onclick="addToDisplay('.')">.</button>
         <button onclick="calculate()">=</button>
     </div>
+</div>
     <script src="index.js"></script>
 </body>
 </html>
