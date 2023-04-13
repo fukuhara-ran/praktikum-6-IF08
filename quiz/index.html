@@ -10,28 +10,28 @@
 <body>
     <div class="content">
     <div class="display">
-        <input type="text" id="display">
+        <input type="text" id="display" disabled>
     </div>
     <div class="buttons">
-        <button onclick="clearDisplay('CE')" class="ceBtn">AC</button>
-        <button onclick="addToDisplay('%')" class="optBtn">+/-</button>
-        <button onclick="addToDisplay('%')" class="optBtn">%</button>
-        <button onclick="addToDisplay('/')" class="optBtn">÷</button>
+        <button onclick="clearDisplay('CE')" class="ceBtn green">AC</button>
+        <button onclick="addToDisplay('%')" class="optBtn green">+/-</button>
+        <button onclick="addToDisplay('%')" class="optBtn green">%</button>
+        <button onclick="addToDisplay('/')" class="optBtn red">÷</button>
         <button onclick="addToDisplay('7')">7</button>
         <button onclick="addToDisplay('8')">8</button>
         <button onclick="addToDisplay('9')">9</button>
-        <button onclick="addToDisplay('*')" class="optBtn">×</button>
+        <button onclick="addToDisplay('*')" class="optBtn red">×</button>
         <button onclick="addToDisplay('4')">4</button>
         <button onclick="addToDisplay('5')">5</button>
         <button onclick="addToDisplay('6')">6</button>
-        <button onclick="addToDisplay('-')" class="optBtn">−</button>
+        <button onclick="addToDisplay('-')" class="optBtn red">−</button>
         <button onclick="addToDisplay('1')">1</button>
         <button onclick="addToDisplay('2')">2</button>
         <button onclick="addToDisplay('3')">3</button>
-        <button onclick="addToDisplay('+')" class="optBtn">+</button>
+        <button onclick="addToDisplay('+')" class="optBtn red">+</button>
         <button onclick="addToDisplay('0')">0</button>
         <button onclick="addToDisplay('.')">.</button>
-        <button onclick="calculate()">=</button>
+        <button onclick="calculate()" class="red">=</button>
     </div>
 </div>
     <script src="index.js"></script>
