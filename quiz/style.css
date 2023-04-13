@@ -45,6 +45,8 @@ input#display {
   height: 50px;
   background-color: #272B33;
   color: #fff;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 button.green{
