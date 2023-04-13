@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+:root{
+    --input-bg: #22252D;
+    --buttonsContainer-bg: #292D36;
+    --display-bg: #22252D;
+    --button-bg: #272B33;
+    --text: #fff;
+}
+
+html[data-color-mode="light"]{
+    --input-bg: #fff;
+    --buttonsContainer-bg: #fff;
+    --display-bg: #fff;
+    --button-bg: #fff;
+    --text: #333;
+}
+
 .content {
   width: 100vw;
   height: 100vh;
@@ -20,8 +36,9 @@ input#display {
   border-top-left-radius: 15px;
   font-size: 25px;
   text-align: right;
-  background-color: #22252D;
-  color: #fff;
+  background-color: var(--input-bg);
+  color: var(--text);
+  border-radius: 15px;
 }
 
 .buttons {
@@ -29,21 +46,22 @@ input#display {
   flex-wrap: wrap;
   width: 300px;
   gap: 20px;
-  background-color: #292D36;
+  background-color: var(--buttonsContainer-bg);
   justify-content: center;
   padding: 10px;
   border-radius: 15px;
 }
 
 .display {
-    background-color: #22252D;
+    background-color: var(--display-bg);
+    border-radius: 15px;
 }
 
 .buttons button {
   width: 50px;
   height: 50px;
-  background-color: #272B33;
-  color: #fff;
+  background-color: var(--button-bg);
+  color: var(--text);
   font-weight: bold;
   font-size: 20px;
 }
