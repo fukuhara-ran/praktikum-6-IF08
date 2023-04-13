@@ -33,11 +33,10 @@ input#display {
   justify-content: center;
   padding: 10px;
   border-radius: 15px;
-  /* border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px; */
 }
 
 .display {
+    background-color: #22252D;
 }
 
 .buttons button {
@@ -47,6 +46,10 @@ input#display {
   color: #fff;
   font-weight: bold;
   font-size: 20px;
+}
+
+.buttons button:hover{
+    background-color: #484e58;
 }
 
 button.green{
