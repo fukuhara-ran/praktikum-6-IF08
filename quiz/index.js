@@ -1,5 +1,6 @@
 let display = document.getElementById('display');
-const button = document.getElementById('mode');
+const lbutton = document.getElementById('lMode');
+const dbutton = document.getElementById('dMode');
 const html = document.querySelector('html');
 
 function append(value) {
@@ -22,16 +23,16 @@ function calculate() {
     display.value = eval(display.value);
 }
 
-button.addEventListener('click', function () {
+lbutton.addEventListener('click', function () {
     if(html.dataset.colorMode === 'dark'){
         html.dataset.colorMode = 'light';
-        this.textContent = 'Light Mode';
     }
-    else{
+})
+dbutton.addEventListener('click', function () {
+    if(html.dataset.colorMode === 'light'){
         html.dataset.colorMode = 'dark';
-        this.textContent = 'Dark Mode';
     }
-  })
+})
 
 function ValidateInput (value) {
 	let last_input = input.slice(-1);
