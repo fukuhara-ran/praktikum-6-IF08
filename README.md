@@ -2,7 +2,7 @@
 Pemrograman Web Kelompok 4
 | **Nama** | **NIM** |
 |-----|----|
-|Reksa Panduasa | 21.11.4352 |
+| Reksa Panduasa | 21.11.4352 |
 | Zulfa Fakaha | 21.11.4337 |
 | Kenedi Fagus Pradana | 21.11.4338 |
 | Zulaicho Oktafreza Wardana | 21.11.4360 |

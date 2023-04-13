@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html{
+  background-color: var(--display-bg);
+}
+
 :root{
     --input-bg: #22252D;
     --buttonsContainer-bg: #292D36;
