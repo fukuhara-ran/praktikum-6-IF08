@@ -73,7 +73,7 @@ input#display {
   padding: 10px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  border: 1px solid var(--border-button-mode);
+  border: 2px solid var(--border-button-mode);
 }
 
 .display {
